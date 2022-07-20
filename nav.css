@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.dropdown{
+    position : relative;
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+.dropdown::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(-45deg);
+    transition: 0s;
+    pointer-events: none;
+}
+.dropdown:hover::before{
+    border-top: 1px solid mediumpurple;
+    border-right: 1px solid mediumpurple;
+}
+.dropdown.active::before{
+    top: 10px;
+    transform: rotate(-225deg);
+    border-top: 1px solid mediumpurple;
+    border-right: 1px solid mediumpurple;
+
+}
+.dropdown:hover{
+    background-color: mediumpurple;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.dropdown .option{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: -200px;
+    width: 1200px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+    display: none;
+}
+.dropdown.active .option{
+    display: flex;
+}
+.dropdown .option div{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.dropdown .option>div>div:nth-child(2):hover{
+    background-color: bisque;
+}
+.dropdown .option>div>div:nth-child(3):hover{
+    background-color: aquamarine;
+}
+.option>div>div, .option>div>div>div>div{
+    display: flex;
+}
+.option>div>div>div>div{
+    font-size: 10px;
+}
+#nav{
+    position: fixed;
+    display: flex;
+    gap: 350px;
+    justify-content: space-between;
+}
+#nav>div{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+#nav>div>div{
+    display: flex;
+    margin: auto;
+    width: 1fr;
+}
+#nav>div:last-child{
+    width: 25%;
+    margin-right: auto;
+}
+#nav img{
+    width: 27%;
+}
