@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1bec6be586.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,11 +24,11 @@
             <div class="dropdown">Products
                 <div class="option">
                     <div>
-                        <div>
+                        <div class="top">
                             <h2>monday products</h2>
                             <p>Product tailored to your teams' need</p>
                         </div>
-                        <div>
+                        <div class="link">
                             <div>
                                 <ion-icon name="crop-outline"></ion-icon>
                             </div>
@@ -41,9 +43,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="link">
                             <div>
-                                <ion-icon name="crop-outline"></ion-icon>
+                                <ion-icon name="unlink-outline"></ion-icon>
                             </div>
                             <div>
                                 <h3>monday work management</h3>
@@ -56,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="link">
                             <div>
                                 <ion-icon name="crop-outline"></ion-icon>
                             </div>
@@ -73,8 +75,8 @@
                         </div>
                     </div>
                     <div>
-                        <div></div>
-                        <div>
+                        <div class="top"></div>
+                        <div class="link">
                             <div>
                                 <ion-icon name="crop-outline"></ion-icon>
                             </div>
@@ -89,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="link">
                             <div>
                                 <ion-icon name="crop-outline"></ion-icon>
                             </div>
@@ -104,21 +106,243 @@
                                 </div>
                             </div>
                         </div>
-                        <div></div>
+                        <div class="link"></div>
 
                     </div>
-                    <div></div>
+                    <div>
+                        <div class="top">
+                            <p>-More by monday.com</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div>Use Cases<i class="fa-solid fa-angle-down"></i></div>
-            <div>Features<i class="fa-solid fa-angle-down"></i></div>
-            <div>Resources<i class="fa-solid fa-angle-down"></i></div>
+            <div class="dropdown">Use Cases</div>
+            <div class="dropdown">Features</div>
+            <div class="dropdown">Resources</div>
         </div>
         <div>
             <div>Pricing</div>
             <div>Contact Sales</div>
             <div>Login</div>
-            <button type="click">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+            <button type="click" class="btn" onclick="openPopup()">Get Started <i
+                    class="fa-solid fa-arrow-right"></i></button>
+            <div class="popUp">
+                <h3>Sign up for free</h3>
+                <p>Full access. No credit card needed.</p>
+                <input type="email" placeholder="Enter your work email" id="email" />
+                <input type="submit" value="Continue" id="submit" onclick="closePopup()">
+                <hr data-content="OR" />
+                <button>Sign in with Google</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>A platform built for a new way of working</h1>
+        <h3>What would you like to manage with monday.com Work OS?</h3>
+        <div>
+            <div>
+                <i class="fa-solid fa-shapes"></i>
+                <p>Creative & design</p>
+            </div>
+            <div>
+                <ion-icon name="code-outline"></ion-icon>
+                <p>Software development</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bullhorn"></i>
+                <p>Marketing</p>
+            </div>
+            <div>
+                <ion-icon name="list-outline"></ion-icon>
+                <p>Project Management</p>
+            </div>
+            <div>
+                <ion-icon name="analytics-outline"></ion-icon>
+                <p>Sales & CRM</p>
+            </div>
+            <div>
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <p>Task management</p>
+            </div>
+            <div>
+                <ion-icon name="people-outline"></ion-icon>
+                <p>HR</p>
+            </div>
+            <div>
+                <ion-icon name="settings-outline"></ion-icon>
+                <p>Operations</p>
+            </div>
+            <div>
+                <ion-icon name="copy-outline"></ion-icon>
+                <p>More workflows</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <video
+            src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"
+            autoplay="" loop=""></video>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png"
+                    alt="logo" />
+                <p>Pricing</p>
+                <p>Contact us</p>
+                <p>Templates</p>
+                <p>SMB</p>
+                <p>Enterprise</p>
+                <p>Nonprofits</p>
+                <p>Apps marketplace</p>
+                <p>24/7 support</p>
+            </div>
+            <div>
+                <h4 class="topGap">Features</h4>
+                <p>Docs</p>
+                <p>Integrations</p>
+                <p>Automations</p>
+                <p>Files</p>
+                <p>Dashboards</p>
+                <p>Kanban</p>
+                <p>Gantt</p>
+            </div>
+            <div>
+                <h4 class="topGap">monday products</h4>
+
+                <div class="footIn">
+                    <div>
+                        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png"
+                            alt="">
+                    </div>
+                    <div>monday work management</div>
+                </div>
+                <div class="footIn">
+                    <div>
+                        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/crm_icon_footer.png"
+                            alt="">
+
+                    </div>
+                    <div>monday sales CRM</div>
+                </div>
+                <div class="footIn">
+                    <div>
+                        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/marketer_icon_footer.png"
+                            alt="">
+                    </div>
+                    <div>monday marketer</div>
+                </div>
+                <div class="footIn">
+                    <div>
+                        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/projects_icon_footer.png"
+                            alt="">
+                    </div>
+                    <div>monday projects</div>
+                </div>
+                <div class="footIn">
+                    <div>
+                        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/dev_icon_footer.png"
+                            alt="">
+                    </div>
+                    <div>monday dev</div>
+                </div>
+                <h4 class="topGap">More by monday.com</h4>
+                <div class="footIn">
+                    <div>
+                        <img alt="canvas icon footer" class="jsx-4212101279 "
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/canvas_icon_footer.png">
+                    </div>
+                    <div>Canvas</div>
+                </div>
+                <div class="footIn">
+                    <div>
+                        <img alt="workforms icon footer" class="jsx-4212101279 "
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/workforms_icon_footer.png">
+                    </div>
+                    <div>WorkForms</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="topGap">Use cases</h4>
+                <p>Marketing</p>
+                <p>Projecct management</p>
+                <p>SAles</p>
+                <p>Developers</p>
+                <p>HR</p>
+                <p>IT</p>
+                <p>Operations</p>
+                <p>Construction</p>
+            </div>
+            <div>
+                <h4 class="topGap">Comapny</h4>
+                <p>About Us</p>
+                <p>Careers - We're hiring!</p>
+                <p>monday-U</p>
+                <p>Press</p>
+                <p>Customer Stories</p>
+                <p>Become a partner</p>
+                <p>Sustsainability & EsG</p>
+                <p>Affiliates</p>
+                <p>Digital Lift</p>
+                <p>Investor relations</p>
+            </div>
+            <div>
+                <h4 class="topGap">Resources</h4>
+                <p>HElp Center</p>
+                <p>Community</p>
+                <p>Blog</p>
+                <p>Webinars</p>
+                <p>Startup for startup</p>
+                <p>Global events</p>
+                <p>App development</p>
+                <p>Find a partner</p>
+                <p>Compare</p>
+            </div>
+        </div>
+        <hr />
+        <div id="footBot">
+            <div>
+                <div>English</div>
+                <div>
+                    <div>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.seekpng.com/png/full/20-202991_get-it-on-google-play-logo-png-vector.png"
+                        alt="">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>Security | </div>
+                    <div> Terms and privacy | </div>
+                    <div>Privacy policy | </div>
+                    <div>Status</div>
+                </div>
+                <div>All rights reserved © mondau.com</div>
+                <div>
+                    <div><i class="fa-solid fa-universal-access"></i></div>
+                    <div>Accessibility statement</div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

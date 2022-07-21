@@ -1,0 +1,19 @@
+#nav+div{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(33, 18, 101);
+    color: white;
+}
+#nav+div>div>{
+    border: 1px solid white;
+    display: flex;
+    gap: 20px;
+}
+#nav+div>div>div{
+    border: 1px solid white;
+    width: 10%;
+    font-size: 12px;
+}
+div>video{
+    width: 100%;
+}
