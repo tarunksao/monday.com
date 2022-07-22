@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Contact Sales</title>
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contactSales.css">
+    <link rel="stylesheet" href="">
     <script src="https://kit.fontawesome.com/1bec6be586.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <div id="nav">
         <div>
 
@@ -137,52 +136,115 @@
             </div>
         </div>
     </div>
-    <div>
-        <h1>A platform built for a new way of working</h1>
-        <h3>What would you like to manage with monday.com Work OS?</h3>
-        <div id="icons">
-            <div>
-                <i class="fa-solid fa-shapes"></i>
-                <p>Creative & design</p>
+
+    <div id="container">
+        <div>
+            <form id="form">
+                <p>Contact our Sales team</p>
+                <div class="inBox">
+                    <div>
+                        <label for="">First name</label><br />
+                        <input type="text" id="firstName" /><br />
+                    </div>
+                    <div>
+                        <label for="">Last name</label><br />
+                        <input type="text" id="lastName" /><br />
+                    </div>
+                </div>
+                <div class="inBox">
+                    <div>
+                        <label for="">Work email</label><br />
+                        <input type="email" placeholder="name@company.com" id="emailForm" /><br />
+                    </div>
+                    <div>
+                        <label for="">Job title</label><br />
+                        <input type="text" id="jobTitle" /><br />
+                    </div>
+                </div>
+                <label for="">Phone number</label><br />
+                <input type="number" name="" id="phone" /><br />
+                <div class="inBox">
+                    <div>
+                        <label for="">Company name</label><br />
+                        <input type="text" id="companyName" /><br />
+                    </div>
+                    <div>
+                        <label for="">Commpany size</label><br />
+                        <select id="companySize">
+                            <option value="">Please select</option>
+                            <option value="1-19">1-19</option>
+                            <option value="20-49">20-49</option>
+                            <option value="50-99">50-99</option>
+                            <option value="100-250">100-250</option>
+                            <option value="251-1500">251-1500</option>
+                            <option value="1500+">1500+</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="">How can our team help you?</label><br />
+                <input type="text"
+                    placeholder="Tell us more about your team and what work you'd like to manage with monday.com"
+                    id="help" /><br />
+                <p>By clicking submit, I acknowledge receipt of the monday.com <a>Privacy policy</a></p>
+                <input type="submit" value="Submit" id="submitForm" />
+            </form>
+        </div>
+        <div>
+            <p>Align, collaborate and gain visibility into your work in one connected space</p>
+            <div class="inBox">
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto,w_37/remote_mondaycom_static/img/contact-sales/countries_icon.png"
+                        alt="">
+                    <p>Across 190+ countries</p>
+                </div>
+                <div>Meet with a product consultant to see how monday.com can fit your exact business needs</div>
             </div>
-            <div>
-                <ion-icon name="code-outline"></ion-icon>
-                <p>Software development</p>
+            <div class="inBox">
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto,w_37/remote_mondaycom_static/img/contact-sales/customers_icon.png"
+                        alt="">
+                    <p>152k+ paying customers</p>
+                </div>
+                <div>Explore our tailored pricing plans based on your goals and priorities</div>
             </div>
-            <div>
-                <i class="fa-solid fa-bullhorn"></i>
-                <p>Marketing</p>
+            <div class="inBox">
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto,w_37/remote_mondaycom_static/img/contact-sales/industries_icon.png"
+                        alt="">
+                    <p>Serving 200+ industries</p>
+                </div>
+                <div>Boost productivity from day one by building your team's ideal workflow</div>
             </div>
+            <p>For general questions visit our <a>Help Center</a></p>
             <div>
-                <ion-icon name="list-outline"></ion-icon>
-                <p>Project Management</p>
+                <div>“
+                    monday.com Work OS saves us about 1,850 hrs of staff time and somewhere in the range of $50,000 a
+                    month.”</div>
+                <div>Stefana Muller | Senior Director, CTO Product and Program Office | Oscar</div>
             </div>
-            <div>
-                <ion-icon name="analytics-outline"></ion-icon>
-                <p>Sales & CRM</p>
-            </div>
-            <div>
-                <ion-icon name="checkmark-outline"></ion-icon>
-                <p>Task management</p>
-            </div>
-            <div>
-                <ion-icon name="people-outline"></ion-icon>
-                <p>HR</p>
-            </div>
-            <div>
-                <ion-icon name="settings-outline"></ion-icon>
-                <p>Operations</p>
-            </div>
-            <div>
-                <ion-icon name="copy-outline"></ion-icon>
-                <p>More workflows</p>
+            <div class="inBox1">
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/uber.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bbc.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/paypal.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bosch.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/wix.png"
+                        alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <video
-            src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"
-            autoplay="" loop=""></video>
     </div>
     <div id="footer">
         <div>

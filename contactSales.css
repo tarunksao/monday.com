@@ -1,0 +1,125 @@
+#container{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 350;
+}
+#container>div>p:first-child{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#container>div{
+    width: 35%;
+    margin: auto;
+    padding: 40px 0px 30px 0px;
+}
+#container>div:last-child{
+    width: 40%;
+    margin-left: 20px;
+}
+#container>div:first-child{
+    border-radius: 10px;
+    box-shadow: rgba(111, 46, 240, 0.5) -12px 12px, rgba(46, 65, 240, 0.4) -22px 22px, rgba(0, 0, 0, 0.1) 1px 1px 3px 1px;
+}
+#container .inBox{
+    display: flex;
+    gap: 30px;
+}
+#form{
+    width: 90%;
+}
+#form .inBox{
+    width: 100%;
+    justify-content: space-around;
+    gap: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+}
+#form>div input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+#form input{
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+#companySize{
+    width: 180px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 350;
+}
+#form>#help{
+    height: 40px;
+}
+#form>#help:placeholder-shown{
+    text-overflow: ellipsis;
+}
+#help+br+p{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+    margin: 10px auto 30px 85px;
+}
+#form label{
+    font-weight: 400;
+}
+#form>input, #form>label{
+    width: 91%;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+#form>#submitForm{
+    width: 25%;
+    height: 40px;
+    margin-left: 160px;
+    padding-left: 0;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(122, 112, 255);
+}
+#form>label{
+    padding-left: 0;
+}
+#container .inBox1{
+    display: flex;
+    gap: 20px;
+}
+.inBox1>div{
+    width: 18%;
+}
+.inBox1>div>img{
+    width: 100%;
+}
+#container>div:first-child{
+    padding-left: 40px;
+}
+#form>p:first-child{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#container>div:last-child>.inBox>div:first-child{
+    font-size: 15px;
+    text-align: center;
+    width: 25%;
+    border-right: 1px solid lightgray;
+    padding-right: 10px;
+}
+#container>div:last-child>.inBox img{
+    width: 30%;
+}

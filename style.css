@@ -4,10 +4,11 @@
     background-color: rgb(33, 18, 101);
     color: white;
 }
-#nav+div>div>{
-    border: 1px solid white;
+#nav+div>div{
+    margin-top: 20px;
     display: flex;
-    gap: 20px;
+    gap: 0px;
+    justify-content: space-evenly;
 }
 #nav+div>div>div{
     border: 1px solid white;

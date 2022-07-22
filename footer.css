@@ -1,6 +1,7 @@
 #footer {
     width: 90%;
     margin: auto;
+    border-top: 1px solid lightgrey;
 }
 #footer>div{
     margin-top: 20px;
