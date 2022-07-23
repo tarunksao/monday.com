@@ -1,3 +1,11 @@
+#nav{
+    position: fixed;
+    top: 0;
+}
+#container a{
+    text-decoration: underline;
+    color: blue;
+}
 #container{
     margin: auto;
     margin-top: 50px;
@@ -10,6 +18,7 @@
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 20px;
+    margin-top: 70px;
     width: 90%;
 }
 #container>div{
@@ -27,7 +36,7 @@
 }
 #container .inBox{
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 #form{
     width: 90%;
@@ -42,13 +51,13 @@
 }
 #form>div input{
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin-bottom: 20px;
     padding-left: 10px;
 }
 #form input{
-    border-radius: 7px;
-    border: 1px solid gray;
+    border-radius: 4px;
+    border: 1px solid darkgray;
 }
 #companySize{
     width: 180px;
@@ -77,7 +86,7 @@
 }
 #form>input, #form>label{
     width: 91%;
-    height: 30px;
+    height: 40px;
     margin-left: 20px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -97,13 +106,17 @@
 }
 #container .inBox1{
     display: flex;
-    gap: 20px;
 }
 .inBox1>div{
-    width: 18%;
+    width: 20%;
+    margin: auto;
+    margin-left: -150px;
+}
+.inBox1>div:first-child{
+    margin-left: 0px;
 }
 .inBox1>div>img{
-    width: 100%;
+    width: 40%;
 }
 #container>div:first-child{
     padding-left: 40px;
@@ -113,13 +126,56 @@
     font-size: 25px;
     margin-bottom: 20px;
 }
+#container>div:last-child>.inBox+p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+#container>div:last-child>.inBox{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#container>div:last-child>.inBox>div>p{
+    width: 100px;
+}
 #container>div:last-child>.inBox>div:first-child{
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
-    width: 25%;
-    border-right: 1px solid lightgray;
-    padding-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#container>div:last-child>.inBox>div:last-child{
+    align-self: center;
+    width: 70%;
+}
+#container>div:last-child>.inBox>div:nth-child(2)
+{
+    margin-top: 10px;
+    width: 2px;
+    height: 60px;
+    background-color: lightgray;
+}
+#container span{
+    font-weight:600;
 }
 #container>div:last-child>.inBox img{
-    width: 30%;
+    width: 30px;
+}
+#box1{
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 20px 00px 20px 40px;
+    background-color: rgba(46, 65, 240, 0.1);
+}
+#box1>div{
+    width: 90%;
+    line-height: 30px;
+}
+#box1>div:last-child{
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 400;
 }

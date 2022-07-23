@@ -4,6 +4,10 @@ dropdown.forEach(function(x) {
         x.classList.toggle("active");
     });
 });
+let image = document.querySelector("#nav img");
+image.addEventListener("click", function() {
+    window.location.href = "index.html";
+});
 
 let btn = document.querySelector(".popUp");
 

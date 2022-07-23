@@ -17,11 +17,11 @@
 .dropdown::before{
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 4px;
+    height: 4px;
     border: 1px solid;
     right: -12px;
-    top: 9px;
+    top: 11px;
     z-index: 1000;
     border-top: 0px solid white;
     border-right: 0px solid white;
@@ -31,7 +31,7 @@
 }
 
 .dropdown.active::before{
-    top: 23px;
+    top: 14px;
     transform: rotate(-225deg);
 }
 .dropdown:hover{
@@ -149,6 +149,7 @@ div:nth-child(5)>.link:nth-child(2)>div>div>div:first-child{
 #nav img{
     width: 25%;
     margin-right: -18px;
+    cursor: pointer;
 }
 .btn{
     height: 40px;
